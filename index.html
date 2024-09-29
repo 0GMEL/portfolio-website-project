@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Responsive Portfolio</title>
+
+		<!-- CSS ====================================== -->
+		<link rel="stylesheet" href="assets/css/styles.css" />
+
+
+		<!-- BOXICONS ================================ -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+		/>
+
+		<!-- GSAP ======================================= -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+		<!-- THREEJS ================================================= -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+		<!-- HOVER EFFECT ==================================================== -->
+		<script src="assets/js/hover-effect.umd.js"></script>
+
+		<!-- SWIPER CSS ====================================================== -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+		/>
+
+		<!-- SWIPER JS ========================================================== -->
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+		<!-- SCROLL REVEAL ANIMATION ========================================= -->
+		<script src="https://unpkg.com/scrollreveal"></script>
+	</head>
+	<body>
+		<!-- HEADER SECTION =================================================== -->
+		<div class="overlay"></div>
+		<header class="header" id="header">
+			<nav class="nav container">
+				<a href="#home" class="logo">
+					<svg
+						width="176"
+						height="38"
+						viewBox="0 0 176 38"
+						fill="none"
+						xmlns=""
+					>
+						<path
+							d=""
+							fill="black"
+							class="logo-name"
+						/>
+						<path
+							d="M0 1.0625H15.5C25.4871 1.0625 33.5833 9.15868 33.5833 19.1458V19.1458C33.5833 29.133 25.4871 37.2292 15.5 37.2292H0V1.0625Z"
+							fill="black"
+							class="logo-shape"
+						/>
+					</svg>
+				</a>
+
+				<div class="nav-menu" id="nav-menu">
+					<ul class="nav-list">
+						<li class="nav-item">
+							<a href="#home" class="nav-link">
+								<span class="nav-link1">Home</span>
+								<span class="nav-link2">Home</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#showreel" class="nav-link">
+								<span class="nav-link1">Showreel</span>
+								<span class="nav-link2">Showreel</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#project" class="nav-link">
+								<span class="nav-link1">Work</span>
+								<span class="nav-link2">Work</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#testimonial" class="nav-link">
+								<span class="nav-link1">Testimonial</span>
+								<span class="nav-link2">Testimonial</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#footer" class="nav-link">
+								<span class="nav-link1">Contact</span>
+								<span class="nav-link2">Contact</span>
+							</a>
+						</li>
+					</ul>
+
+					<ul class="social-links">
+						<li class="social-link">
+							<a href="#">
+								<span>Fb</span>
+								<i class="bx bxl-facebook"></i>
+							</a>
+						</li>
+						<li class="social-link">
+							<a href="#">
+								<span>Tw</span>
+								<i class="bx bxl-twitter"></i>
+							</a>
+						</li>
+						<li class="social-link">
+							<a href="#">
+								<span>In</span>
+								<i class="bx bxl-linkedin"></i>
+							</a>
+						</li>
+						<li class="social-link">
+							<a href="#">
+								<span>Db</span>
+								<i class="bx bxl-dribbble"></i>
+							</a>
+						</li>
+					</ul>
+
+					<div class="email">
+						<a href="mailto:nikitamel110906@gmail.com">
+							nikitamel110906@gmail.com
+						</a>
+					</div>
+
+					<div class="nav-close" id="nav-close"></div>
+				</div>
+
+				<div class="toggle-wrap">
+					<div class="theme-container">
+						
+					</div>
+
+					<div class="nav-open" id="nav-open"></div>
+				</div>
+			</nav>
+		</header>
+
+		<main class="main">
+			<!-- HOME SECTION ====================================== -->
+			<section class="section home" id="home">
+				<div class="container home-container">
+					<div class="home-data">
+						<h1 class="home-title">HI THERE, I’M A DIGITAL PRODUCT DESIGNER</h1>
+						<p class="home-description">
+							I am a Brand Identity, UI/UX & Web Designer
+							passionate about building brands that inspire & solving problems
+							creatively with a slight addiction to coffee and music.
+						</p>
+
+						<div class="home-buttons">
+							<button class="btn">Say Hi</button>
+							<button class="btn-b">Play Showreel</button>
+						</div>
+					</div>
+
+					<div class="home-image">
+						<div class="home-img">
+							<img src="assets/images/ig-1.jpg" alt="" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- SHOWREEL SECTION ======================================== -->
+			<section class="section showreel" id="showreel">
+				<div class="container showreel-container">
+					<div class="showreel-media">
+						<div class="showreel-image">
+							<img src="assets/images/showreel.jpg" alt="" />
+							<div class="play-btn"><i class="bx bx-play"></i></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- PROJECT SECTION ========================================= -->
+			<section class="section project" id="project">
+				<div class="container project-container">
+					<h2 class="section-title">my featured<br />projects</h2>
+					<div class="project-wrap">
+						<!-- Project 1===== -->
+						<div class="project-list p-1">
+							<div class="project-content-wrap">
+								<div class="project-media">
+									<a href="#">
+										<div class="project-img">
+											<div class="l1"></div>
+											<img src="assets/images/p-22.jpg" alt="">
+										</div>
+									</a>
+								</div>
+
+
+								<div class="project-content">
+									<h3>Project 1</h3>
+									<p>
+										It is a long established fact that a reader will be
+										distracted by the readable content of a page when looking at
+										its layout. The text has various versions which has evolved.
+									</p>
+									<div class="project-btn-container">
+										<a href="#" class="project-link">
+											<span class="project-link1">View Project</span>
+											<span class="project-link2">NM</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Project 2===== -->
+						<div class="project-list p-2">
+							<div class="project-content-wrap">
+								<div class="project-media">
+									<a href="#">
+										<div class="project-img">
+											<div class="l2"></div>
+											<img src="assets/images/p-1.jpg" alt="">
+										</div>
+									</a>
+								</div>
+
+								<div class="project-content">
+									<h3>Project 2</h3>
+									<p>
+										It is a long established fact that a reader will be
+										distracted by the readable content of a page when looking at
+										its layout. The text has various versions which has evolved.
+									</p>
+									<div class="project-btn-container">
+										<a href="#" class="project-link">
+											<span class="project-link1">View Project</span>
+											<span class="project-link2">NM</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Project 3===== -->
+						<div class="project-list p-3">
+							<div class="project-content-wrap">
+								<div class="project-media">
+									<a href="#">
+										<div class="project-img">
+											<div class="l3"></div>
+											<img src="assets/images/p-11.jpg" alt="">
+										</div>
+									</a>
+								</div>
+
+								<div class="project-content">
+									<h3>Project 3</h3>
+									<p>
+										It is a long established fact that a reader will be
+										distracted by the readable content of a page when looking at
+										its layout. The text has various versions which has evolved.
+									</p>
+									<div class="project-btn-container">
+										<a href="#" class="project-link">
+											<span class="project-link1">View Project</span>
+											<span class="project-link2">NM</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Project 4===== -->
+						<div class="project-list p-4">
+							<div class="project-content-wrap">
+								<div class="project-media">
+									<a href="#">
+										<div class="project-img">
+											<div class="l4"></div>
+											<img src="assets/images/p-2.jpg" alt="">
+										</div>
+									</a>
+								</div>
+
+								<div class="project-content">
+									<h3>Project 4</h3>
+									<p>
+										It is a long established fact that a reader will be
+										distracted by the readable content of a page when looking at
+										its layout. The text has various versions which has evolved.
+									</p>
+									<div class="project-btn-container">
+										<a href="#" class="project-link">
+											<span class="project-link1">View Project</span>
+											<span class="project-link2">NM</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- TESTIMONIAL SECTION ======================================= -->
+			<section class="section testimonial" id="testimonial">
+				<div class="container testimonial-container">
+					<div class="testimonial-bg swiper">
+						<div class="testimonial-data">
+							<h2 class="section-title">What My<br />Clients Says.</h2>
+							<div class="pagination">
+								<div class="prev swiper-button-prev"></div>
+								<div class="next swiper-button-next"></div>
+							</div>
+						</div>
+
+						<div class="testimonial-details swiper-wrapper">
+							<!-- Testimonial-1 ==== -->
+							<figure class="swiper-slide">
+								<div class="quote">
+									“NM will patiently listen to you and give you his own
+									Ideas as well, and in the end, he comes up with something
+									completey different from what you’re expecting, but the good
+									news is, you’ll always love it
+								</div>
+
+								<div class="person">
+									<div class="profile-pic">
+										<img src="assets/images/testimonial-1.jpg" alt="" />
+									</div>
+
+									<div class="person-details">
+										<span class="name">Juliet Vandy</span>
+										<span class="post">Facebook Marketing Manager</span>
+									</div>
+								</div>
+							</figure>
+
+							<!-- Testimonial-2 ==== -->
+							<figure class="swiper-slide">
+								<div class="quote">
+									NM will patiently listen to you and give you his own
+									Ideas as well, and in the end, he comes up with something
+									completey different from what you’re expecting, but the good
+									news is, you’ll always love it
+								</div>
+
+								<div class="person">
+									<div class="profile-pic">
+										<img src="assets/images/testimonial-2.jpg" alt="" />
+									</div>
+
+									<div class="person-details">
+										<span class="name">Juliet Vandy</span>
+										<span class="post">Facebook Marketing Manager</span>
+									</div>
+								</div>
+							</figure>
+
+							<!-- Testimonial-3 ==== -->
+							<figure class="swiper-slide">
+								<div class="quote">
+									NM will patiently listen to you and give you his own
+									Ideas as well, and in the end, he comes up with something
+									completey different from what you’re expecting, but the good
+									news is, you’ll always love it
+								</div>
+
+								<div class="person">
+									<div class="profile-pic">
+										<img src="assets/images/testimonial-3.jpg" alt="" />
+									</div>
+
+									<div class="person-details">
+										<span class="name">Juliet Vandy</span>
+										<span class="post">Facebook Marketing Manager</span>
+									</div>
+								</div>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- INSTAGRAM SECTION ======================================= -->
+			<section class="section instagram" id="instagram">
+				<div class="container instagram-container">
+					<div class="container-1">
+						<span class="ig-subtitle">what's new</span>
+						<h2 class="section-title ig-title">Latest on instagram</h2>
+						<div class="instagram-data grid">
+							<!-- Instagram Post 1 ==== -->
+							<div class="ig-box">
+								<img src="assets/images/ig-1.jpg" alt="" />
+								<div class="ig-details">
+									<i class="bx bxl-instagram ig"></i>
+									<p>
+										It’s a long established fact that a reader will be
+										distracted by the readable content of a page.
+									</p>
+									<div class="likes flex">
+										<i class="bx bxs-heart"></i>
+										<div class="numbers">12.7k</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Instagram Post 2 ==== -->
+							<div class="ig-box">
+								<img src="assets/images/ig-2.jpg" alt="" />
+								<div class="ig-details">
+									<i class="bx bxl-instagram ig"></i>
+									<p>
+										It’s a long established fact that a reader will be
+										distracted by the readable content of a page.
+									</p>
+									<div class="likes flex">
+										<i class="bx bxs-heart"></i>
+										<div class="numbers">12.7k</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Instagram Post 3 ==== -->
+							<div class="ig-box">
+								<img src="assets/images/ig-3.jpg" alt="" />
+								<div class="ig-details">
+									<i class="bx bxl-instagram ig"></i>
+									<p>
+										It’s a long established fact that a reader will be
+										distracted by the readable content of a page.
+									</p>
+									<div class="likes flex">
+										<i class="bx bxs-heart"></i>
+										<div class="numbers">12.7k</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- FOOTER SECTION ========================================= -->
+		<footer class="footer section" id="footer">
+			<div class="container footer-container grid">
+				<div class="footer-logo">
+					<a href="#home" class="logo">
+						<svg
+							width="176"
+							height="38"
+							viewBox="0 0 176 38"
+							fill="none"
+							xmlns=""
+						>
+							<path
+								d=""
+								fill="black"
+								class="logo-name"
+							/>
+							<path
+								d="M0 1.0625H15.5C25.4871 1.0625 33.5833 9.15868 33.5833 19.1458V19.1458C33.5833 29.133 25.4871 37.2292 15.5 37.2292H0V1.0625Z"
+								fill="black"
+								class="logo-shape"
+							/>
+						</svg>
+					</a>
+				</div>
+
+				<div class="footer-right">
+					<h2 class="footer-contact-title section-title">
+						Lets's Work<br />Together!
+					</h2>
+
+					<form action="#">
+						<div class="split">
+							<input type="text" placeholder="Full Name" required />
+							<input type="text" placeholder="Phone No. (+7)" required />
+						</div>
+
+						<textarea
+							name="message"
+							id="message"
+							cols="30"
+							rows="4"
+							placeholder="Your Message"
+							required
+						></textarea>
+						<button type="submit" class="btn submit-btn">Send Message</button>
+					</form>
+				</div>
+
+				<div class="footer-left">
+					<ul class="footer-social-links">
+						<li class="footer-social-link">
+							<a href="#">
+								<span>Fb</span>
+								<i class="bx bxl-facebook"></i>
+							</a>
+						</li>
+						<li class="footer-social-link">
+							<a href="#">
+								<span>Tw</span>
+								<i class="bx bxl-twitter"></i>
+							</a>
+						</li>
+						<li class="footer-social-link">
+							<a href="#">
+								<span>In</span>
+								<i class="bx bxl-linkedin"></i>
+							</a>
+						</li>
+						<li class="footer-social-link">
+							<a href="#">
+								<span>Db</span>
+								<i class="bx bxl-dribbble"></i>
+							</a>
+						</li>
+					</ul>
+
+					<p class="footer-description">
+						Feel free to reach out to me any time. I prefer to talk over email,
+						especially since we may be a few time zones away.
+					</p>
+
+					<div class="footer-email">
+						<a href="mailto:nikitamel110906@gmail.com">
+							nikitamel110906@gmail.com
+						</a>
+					</div>
+
+					<div class="copyright">
+						&copy; 2022 by
+						<a
+							href=""
+							target="_blank"
+							>Nikita Melnikov</a
+						>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- SCROLL BACK UP ================================= -->
+		<a href="#" class="scrollup" id="scroll-up">
+			<i class="bx bx-sort-z-a scrollup-icon"></i>
+		</a>
+
+		<!-- MAIN JS ======================================== -->
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
